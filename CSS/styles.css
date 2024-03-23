@@ -1,0 +1,333 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #e2e2ec;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+}
+
+#logo {
+    width: 80px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-top: 0px; /* Ajusta la separación superior según tus necesidades */
+    margin-right: 1px; /* Ajusta la separación derecha según tus necesidades */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Estilos para la sección de la galería (portfolio) */
+.portfolio {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    overflow: hidden; /* Oculta cualquier desbordamiento del video */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+    display: block; /* Para centrar la imagen */
+    margin: 0 auto; /* Para centrar la imagen */
+}
+
+
+.portfolio-item h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+}
+
+.portfolio-item video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos para las nuevas imágenes y video */
+.portfolio-item:nth-child(n+8) {
+    /* Ajusta los estilos para las nuevas imágenes y el video aquí */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    overflow: hidden; /* Oculta cualquier desbordamiento del video */
+}
+
+.portfolio-item:nth-child(n+8) img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item:nth-child(n+8) h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.portfolio-item:nth-child(n+8) p {
+    margin-top: 10px;
+}
+
+.portfolio-item:nth-child(n+8) video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item:nth-child(n+8):hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Agrega estilos para la sección de precios aquí */
+.pricing {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-column:hover {
+    transform: translateY(-10px);
+}
+
+.price {
+    font-size: 2rem;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+/* Estilos para la sección de precios */
+.pricing-column {
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para el precio en los precios */
+.pricing-column .price {
+    font-size: 24px; /* Tamaño de fuente personalizado */
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .pricing-table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pricing-column {
+        flex: 0 0 80%; /* Cambiar el ancho de la columna */
+        margin: 0 0 20px 0; /* Agregar margen inferior para separar las columnas */
+    }
+}
+
+
+/* Estilos para la sección de servicios */
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+    text-align: justify;
+}
+
+/* Estilos para la nueva sección de contacto */
+.new-contact-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.new-contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.new-contact-title {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.new-contact-info {
+    margin-bottom: 40px;
+}
+
+.new-contact-info p {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.new-contact-form input[type="text"],
+.new-contact-form input[type="email"],
+.new-contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.new-contact-form textarea {
+    height: 150px;
+}
+
+.new-contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.new-contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.new-contact-form input[type="text"]:focus,
+.new-contact-form input[type="email"]:focus,
+.new-contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.new-contact-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.new-contact-form .form-group {
+    margin-bottom: 30px;
+}
